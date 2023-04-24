@@ -80,7 +80,7 @@ pipeline {
 				 def str5 =  "${Inputdir}"+batfilename[1]
 				 echo "${str5}"
 				 echo "${batfilename[1]}"
-                    bat " ${str5} "  + "> ${logdir}/" + logname[2] + ".txt"
+                    bat "${str5}"+"> ${logdir}/" + logname[2] + ".txt"
                   }
                 }
               }
